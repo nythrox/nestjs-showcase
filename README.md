@@ -1,6 +1,8 @@
 # Nest.js Showcase
 This showcase's objective is to present how easy it is to create great applications with Nest with some of its main features.
 
+Examples can be found [here (in this repo)](https://github.com/nythrox/nestjs-showcase/tree/master/src) and [here (in the docs)](https://github.com/nestjs/nest/tree/master/sample) 
+
 ## About Nest.js
 Nest provides an application architecture which allows developers and teams to create highly testable, scalable, loosely coupled, modular and easily maintainable applications.
 
