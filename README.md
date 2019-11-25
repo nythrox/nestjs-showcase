@@ -4,7 +4,7 @@ This showcase's objective is to present how easy it is to create great applicati
 ## About Nest.js
 Nest provides an application architecture which allows developers and teams to create highly testable, scalable, loosely coupled, modular and easily maintainable applications.
 
-Nest.js makes use and encourages the use of well-known design patterns like Dependancy Injection, Object Oriented Programming, Functional Programming and Functional Reactive Programming
+Nest.js makes use and encourages the use of well-known design patterns like Dependency Injection, Object Oriented Programming, Functional Programming and Functional Reactive Programming
 
 Under the hood, Nest makes use of robust HTTP Server frameworks like  [Express](https://expressjs.com/)  (the default) and optionally can be configured to use  [Fastify](https://github.com/fastify/fastify)  as well!
 
@@ -53,7 +53,7 @@ export class CatsModule {}
 > You can find more information about **Controllers** [here](https://docs.nestjs.com/controllers)
 
 # Providers
-Providers are classes that can be injected into others when needed. Example of Provider classes are Services, DAOs (Data Access Object), Passport Strategies, Pipes, etc.
+Providers are classes that can be injected into others when needed. Example of Provider classes are Services, DAOs (Data Access Object), Passport Strategies, Pipes, etc (any class that provides functionality).
 To declare a Provider simply annotate it with the `@Injectable()` decorator.
 Providers are injected into classes that depend on them by the Nest framework.
 To have a dependency injected, simply add it to your constructor:
@@ -194,7 +194,7 @@ Interceptors allows you to intercept the request/response cycle and:
 -   **extend**  the basic function behavior
 -   completely  **override**  a function depending on specific conditions (e.g., for caching purposes)
  
- Interceptors implement the NestInterceptor interface and have a method `inercept()` that recieves two parameters: ExecutionContext (that provides additional details about the current execution process) and CallHandler (which you can use to invoke the route handler method at some point in your interceptor).
+ Interceptors implement the NestInterceptor interface and have a method `inercept()` that receives two parameters: ExecutionContext (that provides additional details about the current execution process) and CallHandler (which you can use to invoke the route handler method at some point in your interceptor).
 ```typescript
 @Injectable()
 export class LoggingInterceptor implements NestInterceptor {
@@ -251,7 +251,7 @@ While the base (built-in) exception filter can automatically handle many cases f
 
 **Exception filters** let you control the exact flow of control and the content of the response sent back to the client.
 
-Filters must implement the ExceptionFilter interface and use the decorator `@Catch()`, that allows you to chosse what type of exception to filter.
+Filters must implement the ExceptionFilter interface and use the decorator `@Catch()`, that allows you to choose what type of exception to filter.
 
 The ExceptionFilter requires the method `catch()`, that provides two parameters:
  - HttpException gives you the exception that was caught
